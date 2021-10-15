@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Button } from '@mui/material'
 
 import useGithubApiQuery from '../queries/useGithubApiQuery'
 
@@ -9,7 +10,7 @@ const Projects = () => {
   const userName = data.githubApiQuery.user.name
 
   return (
-    <div>    
+    <Container maxWidth='md'>    
       <h1>Projects</h1>
       <h2>{userName} first 10 Github Repos</h2>
       <ul>
@@ -19,7 +20,8 @@ const Projects = () => {
           )
         }
       </ul>
-    </div>
+      <Button variant='contained' color='secondary'>I do nothing</Button>
+    </Container>
   )
 }
 
