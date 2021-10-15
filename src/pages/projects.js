@@ -12,13 +12,13 @@ const Projects = () => {
 
   return (
     <Container maxWidth='md'>
-      <Header>Projects</Header>
-      <Typography component='h2' sx={subHeader}>
+      <Header dataTestId='header'>Projects</Header>
+      <Typography data-testId='sub-header' component='h2' sx={subHeader}>
         {userName} first 10 Github Repos
       </Typography>
       <ul>
         {repos.map((repo) => (
-          <li key={repo.id}>
+          <li data-testId='repo' key={repo.id}>
             {repo.name}: {repo.updatedAt}
           </li>
         ))}

@@ -12,8 +12,8 @@ const Text = styled('div')(({ theme }) => ({
   },
 }));
 
-const Header = ({ children }) => {
-  return <Text>{children}</Text>;
+const Header = ({ children, dataTestId }) => {
+  return <Text data-testId={dataTestId}>{children}</Text>;
 };
 
 export default Header;
