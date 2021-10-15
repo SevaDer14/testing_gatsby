@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Button } from '@mui/material'
 
 import useGithubApiQuery from '../queries/useGithubApiQuery'
+import Header from '../components/Header'
 
 
 const Projects = () => {
@@ -11,7 +12,7 @@ const Projects = () => {
 
   return (
     <Container maxWidth='md'>    
-      <h1>Projects</h1>
+      <Header>Projects</Header>
       <h2>{userName} first 10 Github Repos</h2>
       <ul>
         {
