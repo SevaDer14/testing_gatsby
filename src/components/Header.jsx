@@ -6,7 +6,7 @@ const Text = styled('div')(({ theme }) => ({
   textAlign: 'center',
   paddingTop: '24px',
   fontSize: '4rem',
-  color: 'red',
+  color: theme.palette.secondary.main,
   [theme.breakpoints.down('md')]: {
     textAlign: 'left',
   },
