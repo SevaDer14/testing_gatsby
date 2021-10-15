@@ -1,8 +1,9 @@
 import React from 'react'
-import { Container, Button } from '@mui/material'
+import { Container, Typography, Button } from '@mui/material'
 
 import useGithubApiQuery from '../queries/useGithubApiQuery'
 import Header from '../components/Header'
+import '../css/projects.css'
 
 
 const Projects = () => {
@@ -13,7 +14,7 @@ const Projects = () => {
   return (
     <Container maxWidth='md'>    
       <Header>Projects</Header>
-      <h2>{userName} first 10 Github Repos</h2>
+      <Typography component='h2' variant='h2' className='SubHeader'>{userName} first 10 Github Repos</Typography>
       <ul>
         {
           repos.map(repo =>
