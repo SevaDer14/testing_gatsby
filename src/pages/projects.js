@@ -1,5 +1,7 @@
 import React from 'react'
+
 import useGithubApiQuery from '../queries/useGithubApiQuery'
+
 
 const Projects = () => {
   const data = useGithubApiQuery()
@@ -7,8 +9,7 @@ const Projects = () => {
   const userName = data.githubApiQuery.user.name
 
   return (
-    <div>
-      
+    <div>    
       <h1>Projects</h1>
       <h2>{userName} first 10 Github Repos</h2>
       <ul>
@@ -22,4 +23,4 @@ const Projects = () => {
   )
 }
 
-export default Projects  
+export default Projects
